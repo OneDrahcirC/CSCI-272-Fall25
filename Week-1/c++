@@ -15,6 +15,6 @@ int main() {
     double doubleNum1 = 2.5;
     double doubleNum2 = 1.5;
 
-    cout << "Multiplication (int): " << multiply(intNum1, intNum2) << endl;
-    cout << "Multiplication (double): " << multiply(doubleNum1, doubleNum2) << endl;
+    cout << "Multiplication " << multiply(intNum1, intNum2) << endl;
+    cout << "Multiplication " << multiply(doubleNum1, doubleNum2) << endl;
 }
