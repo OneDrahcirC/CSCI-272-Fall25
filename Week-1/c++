@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int multiply(int a, int b) {
+    return a * b;
+}
+
+double multiply(double a, double b) {
+    return a * b;
+}
+
+int main() {
+    int intNum1 = 10;
+    int intNum2 = 5;
+    double doubleNum1 = 2.5;
+    double doubleNum2 = 1.5;
+
+    cout << "Multiplication (int): " << multiply(intNum1, intNum2) << endl;
+    cout << "Multiplication (double): " << multiply(doubleNum1, doubleNum2) << endl;
+}
