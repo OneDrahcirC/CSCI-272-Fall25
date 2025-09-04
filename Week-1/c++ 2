@@ -35,6 +35,6 @@ int main() {
     int maxVal = max(numbers, size);
     int minVal = min(numbers, size);
 
-    cout << "Maximum value: " << maxVal << endl;
-    cout << "Minimum value: " << minVal << endl;
+    cout << "Maximum " << maxVal << endl;
+    cout << "Minimum " << minVal << endl;
 }
