@@ -1,0 +1,31 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+double Avg(const vector<int>& ids) {
+    if (ids.empty()) return 0.0;
+    int sum = 0;
+    for (int x : ids) sum += x;
+    return (1.0 * sum) / ids.size();
+}
+
+int Max(const vector<int>& ids) {
+    if (ids.empty()) return 0;
+    int hi = ids[0];
+    for (int x : ids) {
+        if (x > hi) hi = x;
+    }
+    return hi;
+}
+
+int main() {
+    vector<int> ids = {101, 205, 309, 412, 518, 623, 734, 845, 956, 1001};
+
+    double avg = Avg(ids);
+    int maxID = Max(ids);
+
+    cout << "Average ID " << avg << endl;
+    cout << "Highest ID " << maxID << endl;
+
+    return 0;
+}

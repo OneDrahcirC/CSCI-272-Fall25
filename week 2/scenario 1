@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main() {
+    vector<string> menu;
+
+    menu.push_back("Pizza");
+    menu.push_back("Burger");
+    menu.push_back("Salad");
+    menu.push_back("Pasta");
+    menu.push_back("Soup");
+
+    menu.insert(menu.begin() + 1, "Sandwich");
+    menu.erase(menu.begin() + 3);
+
+    cout << "Cafeteria Menu:" << endl;
+    for (const string& dish : menu) {
+        cout << "- " << dish << endl;
+    }
+
+    return 0;
+}
